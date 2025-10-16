@@ -1,0 +1,125 @@
+/* ========== AI LABOR SYNDICATE THEME ========== */
+/* Author: Roc | 2025 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  background: linear-gradient(180deg, #111 0%, #0d0d0d 100%);
+  border-bottom: 1px solid #1a1a1a;
+}
+
+header .logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(255, 100, 0, 0.6));
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  color: #ff6600;
+  text-shadow: 0 0 8px rgba(255, 100, 0, 0.6);
+}
+
+header h2 {
+  font-size: 1.1rem;
+  color: #bbb;
+  font-weight: 400;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.intro p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(255, 100, 0, 0.4);
+}
+
+.button:hover {
+  background-color: #ff8533;
+  box-shadow: 0 0 20px rgba(255, 100, 0, 0.7);
+  transform: translateY(-2px);
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+}
+
+.button.secondary:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #1a1a1a;
+  background: #0b0b0b;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+}
