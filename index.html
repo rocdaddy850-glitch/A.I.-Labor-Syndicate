@@ -175,3 +175,16 @@ footer {
     font-size: 0.95rem;
   }
 }
+<script>
+const metrics = {
+  autonomy: 98,
+  efficiency: 99.7,
+  reach: 47
+};
+
+setInterval(() => {
+  document.getElementById('autonomy').textContent = (metrics.autonomy + Math.random() * 0.5).toFixed(1) + '%';
+  document.getElementById('efficiency').textContent = (metrics.efficiency + Math.random() * 0.2).toFixed(1) + '%';
+  document.getElementById('reach').textContent = Math.floor(metrics.reach + Math.random() * 3) + ' nodes connected';
+}, 4000);
+</script>
