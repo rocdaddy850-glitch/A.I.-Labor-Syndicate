@@ -118,6 +118,54 @@ footer {
     width: 100%;
     max-width: 320px;
   }
+.syndicate-section {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #e0e0e0;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+}
+
+.syndicate-header h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00ffc3, #00c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.syndicate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.node {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.node:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+}
+
+.status {
+  display: inline-block;
+  color: #00ffc3;
+  font-weight: bold;
+}
+
+.syndicate-metrics {
+  margin-top: 2rem;
+  font-family: monospace;
+}
 
   .intro p {
     font-size: 0.95rem;
