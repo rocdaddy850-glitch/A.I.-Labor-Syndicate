@@ -1,0 +1,35 @@
+{
+  "name": "AI Labor Syndicate - Follow-up Flow",
+  "description": "Blueprint mapping of triggers and actions to implement in Zapier.",
+  "steps": [
+    {
+      "step": 1,
+      "trigger": "New Google Sheet Row (booking)",
+      "action": "Send SMS via Twilio to confirm appointment",
+      "notes": "Map phone and job details"
+    },
+    {
+      "step": 2,
+      "trigger": "Row status changed to 'completed'",
+      "action": "Delay 1 day then Send Email via Gmail with checklist PDF and affiliate links",
+      "notes": "Attach guide.pdf link"
+    },
+    {
+      "step": 3,
+      "trigger": "Customer clicks upsell link",
+      "action": "Add to Mailchimp / ConvertKit and tag 'hot'",
+      "notes": "Use UTM tracking"
+    },
+    {
+      "step": 4,
+      "trigger": "Payment received (Stripe)",
+      "action": "Send Thank You + Request Review (Google My Business)",
+      "notes": "Provide review link and discount code"
+    }
+  ],
+  "placeholders": {
+    "gmail_from": "you@yourdomain.com",
+    "twilio_from": "+1xxxxxxxxxx",
+    "stripe_account": "acct_XXXX"
+  }
+}
